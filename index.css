@@ -1,0 +1,21 @@
+.empty, .day {
+  padding-left: 2px;
+  height: 45px;
+  border: thin solid black;
+}
+.month {
+  transform: rotate(90deg);
+}
+
+.title {
+padding-left: 6px;
+}
+
+#lines .empty {
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.cell {
+  width:12%
+}

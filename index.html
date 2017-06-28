@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <script type="text/javascript" src="lib/jquery.js" ></script>
+      <script type="text/javascript" src="index.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="index.css" />
+      <style>
+      @media print { 
+	.noPrint{ display: none !important; } 
+     }
+      </style> 
+      <script type="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <table class="noPrint">
+	<tr>
+	  <td>Years</td>
+	  <td>
+	    <select id="year">
+	      <option value="2015">2015</option>
+	      <option value="2016">2016</option>
+	      <option value="2017">2017</option>
+	    </select>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    Day of week
+	  </td>
+	  <td>
+	    <select id="dayOfWeek">
+	      <option value="0">Sunday</option>
+	      <option value="1">Monday</option>
+	      <option value="2">Tuesday</option>
+	      <option value="3">Wednesday</option>
+	      <option value="4">Thursday</option>
+	      <option value="5">Friday</option>
+	      <option value="6">Saturday</option>
+	    </select>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    Month
+	  </td>
+	  <td>
+	    <select id="monthOfYear">
+	      <option value="0">January</option>
+	      <option value="1">February</option>
+	      <option value="2">March</option>
+	      <option value="3">April</option>
+	      <option value="4">May</option>
+	      <option value="5">June</option>
+	      <option value="6">July</option>
+	    </select>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    Height
+	  </td>
+	  <td>
+	    <input id="lineHeight" onkeypress="create()"/>
+	  </td>
+	</tr>
+	<tr>
+	  <td><button type="button" onclick="create()">Create!</button></td>
+	</tr>
+      </table>
+      <div class="container">
+	<div class="row">
+	  <div class="col-xs-6">
+	    <div id="calendar" class="container">
+	    </div>
+	  </div>
+	  <div class="col-xs-6">
+	    <div id="lines">
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </html>
